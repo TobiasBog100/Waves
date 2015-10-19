@@ -3,8 +3,7 @@
 
 from tkinter import *
 from threading import *
-from os import listdir
-from tkinter import messagebox
+
 
 
 class frame():
@@ -31,12 +30,12 @@ class frame():
         self.mainframe.M.m = Menu(self.mainframe.M, tearoff =0)
 
         self.mainframe.M.m.add_radiobutton(label = "rot", variable = self.string1, value = "800")
-        self.mainframe.M.m.add_radiobutton(label = "grün", variable = self.string1, value = "080")
+        self.mainframe.M.m.add_radiobutton(label = "grÃ¼n", variable = self.string1, value = "080")
         self.mainframe.M.m.add_radiobutton(label = "blau", variable = self.string1, value = "008")
 
         self.mainframe.M.m.m1 = Menu(self.mainframe.M.m,tearoff =0)
 
-        self.mainframe.M.m.m1.add_radiobutton(label = "weiß", variable = self.integer1, value = 1)
+        self.mainframe.M.m.m1.add_radiobutton(label = "weiÃŸ", variable = self.integer1, value = 1)
         self.mainframe.M.m.m1.add_radiobutton(label = "schwarz", variable = self.integer1, value = 2)
 
         self.mainframe.M.m.add_cascade(menu = self.mainframe.M.m.m1, label = "Helligkeit")
@@ -44,7 +43,7 @@ class frame():
         self.mainframe.M.add_cascade(menu = self.mainframe.M.m, label = "Farbe")
 
 
-        self.mainframe.M.add_command(label= "Ändern", command = self.color)
+        self.mainframe.M.add_command(label= "Ã„ndern", command = self.color)
 
 
 
