@@ -31,7 +31,7 @@ Boo1=True
 
 
 # Eingabe:
-Var1=int(input("Punkte der ganzrationalen Funktion haben sie (Zahl): "))
+Var1=int(input("Anzahl der Punkte der ganzrationalen Funktion: "))
 Potenz=Var1-1
 Potenz2=Potenz
 print("\nMaximal eine Funktion",str(Potenz)+".","Grades:\n")
