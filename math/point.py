@@ -1,7 +1,7 @@
 # first version
 # one year ago
 # imports:
-from math import fabs
+from math import fabs # 	position after decimal point
 
 # Listen:
 ListeX=[]
