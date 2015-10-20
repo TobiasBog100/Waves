@@ -98,3 +98,57 @@ while Zah2<len(ListeY)-1:
 
    Zah2 +=1
 
+# Berechnung der Elemente bzw. der einzelnen Vorvariabeln:
+while Zah5<len(Array1):
+    Zah6=0
+    while Zah6<len(Liste):
+        Var7= Array1[len(Array1)-Zah5-1][1+Zah6]
+        Var8= Liste[Zah6]
+        Var9= Var7*Var8
+        Array1[len(Array1)-Zah5-1][1+Zah6]= Var9
+        
+        Zah6 +=1
+
+    Zah7=1
+    Var11= (len(Array1[len(Array1)-Zah5-1])-1)
+
+    while Zah7<Var11:
+        Var10=Array1[len(Array1)-Zah5-1][0]-(Array1[len(Array1)-Zah5-1]).pop(1)
+        Array1[len(Array1)-Zah5-1][0]=Var10
+        Zah7 +=1
+
+
+    if (Array1[len(Array1)-Zah5-1][1])!=0:
+        Var100= Array1[len(Array1)-Zah5-1][0]/(Array1[len(Array1)-Zah5-1][1])
+        Liste.append(Var100)    
+
+    else:
+        Var100=Array1[len(Array1)-Zah5-1][0]
+        Liste.append(0)
+    Zah5 +=1
+
+
+# Ausgabe:
+L=len(Liste)
+
+while Liste[Zah8]==0:
+    Zah8 +=1
+Grad=L-1-Zah8
+
+Funk=Funk+str(Grad)+". Grades:"
+
+while ZahE<L:
+    Pot=L-1-ZahE
+    if Liste[ZahE]==0:
+        Liste[ZahE]=0
+        if ZahE!=0:
+          VarS="+  "
+    elif Liste[ZahE]>0 and ZahE!=0:
+        VarS="+  "
+    elif Liste[ZahE]<0:
+        VarS="-  "
+    Estr= Estr+VarS+str(round(fabs(Liste[ZahE]),7))+" x**"+str(Pot)+"  "
+    ZahE +=1
+
+print(Funk,"\n ",Estr)
+
